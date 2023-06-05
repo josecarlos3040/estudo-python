@@ -15,8 +15,6 @@ Multi line comments?
 
 # atribui o valor 10 a variável n1
 n1 = 10
-
-
 n2 = 30
 n3 = 78
 
