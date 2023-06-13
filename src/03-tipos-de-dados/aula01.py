@@ -74,3 +74,5 @@ for nome in nomes:
 print('----------')
 for i in range(len(nomes)):
     print(nomes[i])
+
+#asdas
