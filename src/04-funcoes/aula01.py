@@ -38,17 +38,18 @@ saudacoes()
 # retorno: nenhum
 
 
-def saudacoes(nome):
-    print(f'Olá {nome}')
+# def saudacoes(nome):
+#    print(f'Olá {nome}')
 
 
 # Chamada
 # valores, variáveis, expressoes => argumentos
 # 'Maria' é um argumento passado para o parâmetro nome
-saudacoes('Maria')
-saudacoes('Pedro')
-x = 'Carlos'
-saudacoes(x)
+
+#saudacoes('Maria')
+#saudacoes('Pedro')
+#x = 'Carlos'
+#saudacoes(x)
 
 # Declaração
 # nome: calcular_media
@@ -77,11 +78,13 @@ calcular_media(n1, n2, n3)
 # nome: calcular_media
 # parametros: nota1, nota2, nota3
 # retorno: media
-def calcular_media(nota1, nota2, nota3):
-    media = (nota1 + nota2 + nota3) / 3
-    return media
-media = calcular_media(10.0, 8.4, 3.2)
-print('Valor da média', media)
+
+#def calcular_media(nota1, nota2, nota3):
+#    media = (nota1 + nota2 + nota3) / 3
+#    return media
+#media = calcular_media(10.0, 8.4, 3.2)
+#print('Valor da média', media)
+
 # enviar no email
 # salvar no banco de dados
 # salvar no arquivo
