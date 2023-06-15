@@ -19,15 +19,15 @@ def obter_classificacao(imc):
     if imc < 18.5:
         return 'Baixo peso.'
     elif imc <= 24.9:
-        return 'Peso Normal'
+        return 'Peso Normal.'
     elif imc <= 29.9:
-        return 'Excesso de peso'
+        return 'Excesso de peso.'
     elif imc <= 34.9:
-        return 'Obesidade de classe 1'
+        return 'Obesidade de classe 1.'
     elif imc <= 39.9:
-        return 'Obesidade de classe 2'
+        return 'Obesidade de classe 2.'
     else:
-        return 'Obesidade de classe 3'
+        return 'Obesidade de classe 3.'
     
 def situacao_individuo(imc):
     if imc < 18.5:
@@ -42,4 +42,4 @@ imc_classificacao = obter_classificacao(imc)
 imc_situacao = situacao_individuo(imc)
 print('Seu imc é:', imc)
 print('Você está classificado como:', imc_classificacao)
-print('Você necessita:', imc_situacao)
+print('Sua situaação:', imc_situacao)
