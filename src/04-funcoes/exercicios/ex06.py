@@ -19,16 +19,15 @@ def potencia_termostato(volume, temperatura_desejada, temperatura_ambiente):
 
 def filtragem_hora(volume):
     filtragem1 = volume * 2
-
-    return f'A filtragem por hora deve ser de {filtragem1} em {filtragem1} hora'
+    return f'A filtragem por hora deve ser de {filtragem1} em {filtragem1} hora.'
 
 
 volume = calcular_volume(comprimento, altura, largura)
-print('O volume do aquário é', volume)
+print('O volume do aquário é: ', volume)
 
 potencia = potencia_termostato(
     volume, temperatura_desejada, temperatura_ambiente)
-print('A potência ideal do termostato é:', potencia)
+print('A potência ideal do termostato é: ', potencia)
 
 filtragem = filtragem_hora(volume)
 print(filtragem)
