@@ -1,4 +1,5 @@
 """ Exer 05 """
+breakpoint()
 
 print("Calculadora IMC")
 h = float(input("Entre com a sua altura em metros: "))

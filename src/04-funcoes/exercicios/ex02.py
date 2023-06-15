@@ -1,5 +1,5 @@
 """ Exer 02 """
-
+breakpoint()
 
 def funcao(n1, n2, n3):
     return print(f'A soma dos numeros é: ', n1+n2+n3)

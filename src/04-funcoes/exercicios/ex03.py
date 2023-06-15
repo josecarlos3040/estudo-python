@@ -1,5 +1,5 @@
 # """ Exer 03 """
-
+breakpoint()
 
 numeros = (10.0, 5.5, 7.4)
 
