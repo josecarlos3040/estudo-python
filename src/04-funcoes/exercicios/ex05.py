@@ -5,7 +5,6 @@ h = float(input("Entre com a sua altura em metros: "))
 kg = float(input("Entre com o seu peso em quilogramas: "))
 
 
-
 individuo = {
     'altura': h,
     'peso': kg
@@ -14,6 +13,7 @@ individuo = {
 
 def calcular_imc(individuo):
     return kg / (h * h)
+
 
 def obter_classificacao(imc):
     if imc < 18.5:
@@ -28,7 +28,8 @@ def obter_classificacao(imc):
         return 'Obesidade de classe 2.'
     else:
         return 'Obesidade de classe 3.'
-    
+
+
 def situacao_individuo(imc):
     if imc < 18.5:
         return 'Você deve ganhar peso.'
@@ -36,6 +37,7 @@ def situacao_individuo(imc):
         return 'Normal'
     else:
         return 'Perder peso'
+
 
 imc = calcular_imc(individuo)
 imc_classificacao = obter_classificacao(imc)

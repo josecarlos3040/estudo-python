@@ -19,8 +19,8 @@ def potencia_termostato(volume, temperatura_desejada, temperatura_ambiente):
 
 def filtragem_hora(volume):
     filtragem1 = volume * 2
-    filtragem2 = volume * 3
-    return f'A filtragem por hora deve estar, no mínimo, entre {filtragem1} e {filtragem2}'
+
+    return f'A filtragem por hora deve ser de {filtragem1} em {filtragem1} hora'
 
 
 volume = calcular_volume(comprimento, altura, largura)
