@@ -40,6 +40,6 @@ def situacao_individuo(imc):
 imc = calcular_imc(individuo)
 imc_classificacao = obter_classificacao(imc)
 imc_situacao = situacao_individuo(imc)
-print('Seu imc é:', imc)
+print(f'Seu imc é: {imc:.2f}')
 print('Você está classificado como:', imc_classificacao)
-print('Sua situaação:', imc_situacao)
+print('Sua situação:', imc_situacao)
