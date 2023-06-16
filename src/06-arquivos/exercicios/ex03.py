@@ -1,34 +1,32 @@
-""" Exer 03 """
+""" Exer 03 - """
 
-def linha_para_dict(valores_str, chaves):
+def linha_para_dict(chaves, dados):
+    dados = dados.strip().split(sep=',')
 
-    valores = valores_str.split(',')
+    dictionary = {}
 
-    dicionario = {}
     for i in range(len(chaves)):
-        if i < len(valores):
-            dicionario[chaves[i]] = valores[i]
-        else:
-            dicionario[chaves[i]] = None
+        dictionary[chaves[i]] = dados[i]
 
-    return dicionario
+    return dictionary
 
+def buscar_dados(nome_arquivo):
+    linhas = []
+    chaves = []
+    valores = ''
 
-with open("src/06-arquivos/exercicios/valores.txt", "r") as arquivo_valores:
-    valores_str = arquivo_valores.read().strip()
+    with open(nome_arquivo, 'r', encoding='utf-8') as file:
+        for line in file:
+            linhas.append(line)
+        chaves = linhas[1].strip().split(sep=',')
+        valores = linhas[0]
 
+    return chaves, valores
 
-with open("src/06-arquivos/exercicios/chaves.txt", "r") as arquivo_chaves:
-    chaves_str = arquivo_chaves.read().strip()
+keys, data = buscar_dados('src/06-arquivos/exercicios/dados_exer03.txt')
+result = linha_para_dict(keys, data)
 
-
-chaves = chaves_str.split(',')
-
-
-dicionario = linha_para_dict(valores_str, chaves)
-
-
-print("{")
-for chave, valor in dicionario.items():
-    print(f"    '{chave}': '{valor}',")
-print("}")
+print('{')
+for key, value in result.items():
+    print(f'    {key} : {value}')
+print('}')
