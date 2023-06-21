@@ -9,7 +9,7 @@ linhas /
 Multi line comments?
 '''
 
-# Ctrl + ;
+# Ctrl ;
 
 # Codigo bem escrito não precisa de comentário
 

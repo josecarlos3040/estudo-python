@@ -1,7 +1,6 @@
 """ Aula 05 - Métodos especiais """
 
 
-
 # logging, debug
 # representação canonica
 
@@ -11,24 +10,24 @@ class Retangulo:
         self.base = base
         self.altura = altura
 
-
     def calcular_area(self):
         return self.base * self.altura
 
     def calcular_perimetro(self):
         return 2 * (self.base + self.altura)
 
-
     # __str__(self)
     # representação do objeto como string para humanos
+
     def __str__(self):
         return f'Retangulo[base={self.base}, altura={self.altura}]'
-    
+
     # __repr__(self)
     # representação do objeto como string para recriar esse objeto
     def __repr__(self):
         return f'Retangulo({self.base},{self.altura})'
-    
+
+
 retangulo1 = Retangulo(10.0, 5.0)
 retangulo2 = Retangulo(3.0, 14.0)
 
