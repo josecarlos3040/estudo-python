@@ -1,5 +1,6 @@
 """ Exer 01 """
 
+
 class Aluno:
     def __init__(self, prontuario, nome, email):
         self.prontuario = prontuario
@@ -9,7 +10,7 @@ class Aluno:
     @property
     def prontuario(self):
         return self._prontuario
-    
+
     @prontuario.setter
     def prontuario(self, value):
         if value == " " or not value:
@@ -19,7 +20,7 @@ class Aluno:
     @property
     def nome(self):
         return self._nome
-    
+
     @nome.setter
     def nome(self, value):
         if value == " " or not value:
@@ -29,7 +30,7 @@ class Aluno:
     @property
     def email(self):
         return self._email
-    
+
     @email.setter
     def email(self, value):
         if value == " " or not value:
@@ -51,7 +52,8 @@ class Aluno:
 
     def __str__(self):
         return f'Aluno[prontuario={self.prontuario}, nome={self.nome}, email={self.email}]'
-    
+
+
 aluno1 = Aluno('SP3044939', 'Jose Carlos', 'jose.viveiros@aluno.ifsp.edu.br')
 aluno2 = Aluno('SP3044939', 'Amanda Maria', 'amanda.maria@aluno.ifsp.edu.br')
 print(aluno1)
